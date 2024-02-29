@@ -679,6 +679,10 @@ video {
   display: block;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
 }
@@ -897,6 +901,10 @@ video {
 
 .pb-36 {
   padding-bottom: 9rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
 }
 
 .pt-24 {
