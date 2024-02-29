@@ -11,8 +11,8 @@ html(lang="en")
         script(src="js/main.js")
     body(class="antialiased bg-body text-body font-body")
         div(class="")
-            section(class="bg-gradient-fuchsia background-animate overflow-hidden")
-                section
+            section(class="overflow-hidden bg-gradient-fuchsia background-animate")
+                section(class="container mx-auto")
                     div(class="flex items-center justify-between px-8 py-5")
                         div(class="w-auto")
                             div(class="flex flex-wrap items-center w-48")
@@ -21,58 +21,57 @@ html(lang="en")
                                         img(src="images/LoopPrinter-light.png", alt="")
                         div(class="w-auto")
                             div(class="flex flex-wrap items-center")
-                                div(class="w-auto block")
-                                    button(class="font-heading block py-3.5 px-5 uppercase text-xs tracking-px text-white font-bold bg-white bg-opacity-20 hover:bg-opacity-10 transition ease-in rounded-10") Get Loop Printer extension
-                div(class="relative container mx-auto px-4")
-                    img(class="hidden xl:block absolute bottom-64 left-56 transform -translate-y-4", src="gradia-assets/elements/hero/line2.svg", alt="")
-                    img(class="hidden xl:block absolute bottom-64 right-56 transform -translate-y-28", src="gradia-assets/elements/hero/line3.svg", alt="")
-                    div(class="relative z-10 flex flex-wrap justify-center items-center -m-6 lg:pt-32 pb-36")
+                                div(class="block w-auto")
+                                    a(href="https://chromewebstore.google.com/detail/loop-printer-beta/focjonfjfbmcjfnepjngmjdlliilkofb" class="font-heading block py-3.5 px-5 uppercase text-xs tracking-px text-white font-bold bg-black bg-opacity-40 hover:bg-opacity-60 transition ease-in rounded-10") Get Loop Printer for Chrome
+                div(class="container relative px-4 mx-auto")
+                    img(class="absolute hidden transform -translate-y-4 xl:block bottom-64 left-56", src="gradia-assets/elements/hero/line2.svg", alt="")
+                    img(class="absolute hidden transform xl:block bottom-64 right-56 -translate-y-28", src="gradia-assets/elements/hero/line3.svg", alt="")
+                    div(class="relative z-10 flex flex-wrap items-center justify-center -m-6 lg:pt-32 pb-36")
                         div(class="flex-1 p-6")
-                            div(class="lg:max-w-2xl mx-auto")
-                                h1(class="mb-6 font-heading text-center text-white text-7xl md:text-9xl xl:text-12xl font-bold") Get more people in the Loop!
-                                p(class="mb-10 font-medium text-xl text-center text-white") Easily print (and save to PDF) your Loop pages to get more people in the loop.
-                                button(class="group mb-9 relative flex items-center justify-center font-heading px-24 py-5 mx-auto w-full lg:w-auto uppercase text-white text-xs font-semibold tracking-px bg-gray-900 overflow-hidden rounded-md")
-                                    div(class="absolute transform -translate-x-full group-hover:-translate-x-0 h-full w-full transition ease-in-out duration-500 bg-gradient-fuchsia")
+                            div(class="mx-auto lg:max-w-2xl")
+                                h1(class="mb-6 font-bold text-center text-white font-heading text-7xl md:text-9xl xl:text-12xl") Get more people in the Loop!
+                                p(class="mb-10 text-xl font-medium text-center text-white") Easily print (and save to PDF) your Loop pages to get more people in the loop.
+                                a(href="https://chromewebstore.google.com/detail/loop-printer-beta/focjonfjfbmcjfnepjngmjdlliilkofb" class="relative flex items-center justify-center w-full px-24 py-5 mx-auto overflow-hidden text-xs font-semibold text-white uppercase bg-gray-900 rounded-md group mb-9 font-heading lg:w-auto tracking-px")
+                                    div(class="absolute w-full h-full transition duration-500 ease-in-out transform -translate-x-full group-hover:-translate-x-0 bg-gradient-fuchsia")
                                     p(class="relative z-10 mr-2") Loop Printer (Beta) - ADD TO CHROME
                                     svg(class="relative z-10", width="19", height="18", viewbox="0 0 19 18", fill="none", xmlns="http://www.w3.org/2000/svg")
                                         path(fill-rule="evenodd", clip-rule="evenodd", d="M9.49999 16.2C13.4764 16.2 16.7 12.9764 16.7 8.99999C16.7 5.02354 13.4764 1.79999 9.49999 1.79999C5.52354 1.79999 2.29999 5.02354 2.29999 8.99999C2.29999 12.9764 5.52354 16.2 9.49999 16.2ZM12.8364 8.36359L10.1364 5.66359C9.78491 5.31212 9.21506 5.31212 8.86359 5.66359C8.51212 6.01506 8.51212 6.58491 8.86359 6.93638L10.0272 8.09999L6.79999 8.09999C6.30293 8.09999 5.89999 8.50293 5.89999 8.99999C5.89999 9.49704 6.30293 9.89999 6.79999 9.89999H10.0272L8.86359 11.0636C8.51212 11.4151 8.51212 11.9849 8.86359 12.3364C9.21506 12.6879 9.78491 12.6879 10.1364 12.3364L12.8364 9.63638C13.1879 9.28491 13.1879 8.71506 12.8364 8.36359Z", fill="white")
-            section(class="relative pt-24 overflow-hidden")
-                div(class="container mx-auto px-4 mb-12")
+            section(class="relative min-h-screen pt-24 overflow-hidden")
+                div(class="container px-4 mx-auto mb-12")
                     div(class="flex flex-wrap -m-6")
                         div(class="w-full p-6")
-                            h2(class="mb-16 max-w-xl mx-auto font-heading font-bold text-center text-6xl sm:text-7xl text-gray-900") Missing the print option?
+                            h2(class="max-w-xl mx-auto mb-16 text-6xl font-bold text-center text-gray-900 font-heading sm:text-7xl") Missing the print option?
                             div(class="flex flex-wrap -m-6")
-                                div(class="w-full lg:w-1/2 p-6")
+                                div(class="w-full p-6 lg:w-1/2")
                                     div(class="mb-11 lg:max-w-sm")
-                                        h3(class="mb-4 text-transparent bg-clip-text bg-gradient-purple2 font-heading text-xl") Inclusivity
-                                        p(class="text-gray-600 text-base") Don't let the digital divide hold your team back. With Loop Printer, ensure everyone, everywhere has access to your collaborative workspaces, even offline.
+                                        h3(class="mb-4 text-xl text-transparent bg-clip-text bg-gradient-purple2 font-heading") Inclusivity
+                                        p(class="text-base text-gray-600") Don't let the digital divide hold your team back. With Loop Printer, ensure everyone, everywhere has access to your collaborative workspaces, even offline.
                                     div(class="mb-11 lg:max-w-sm")
-                                        h3(class="mb-4 text-transparent bg-clip-text bg-gradient-purple2 font-heading text-xl") Effortless Sharing
-                                        p(class="text-gray-600 text-base") Bridge the gap between digital workspaces and traditional documentation. Convert your dynamic Loop pages into easy-to-distribute PDFs with just one click.
-                div(class="ml-auto lg:absolute lg:top-64 lg:right-0 lg:w-1/2 max-w-max overflow-hidden bg-gradient-purple2 rounded-tl-3xl rounded-bl-3xl")
-                    img(class="relative left-16 top-16 transform hover:-translate-x-5 hover:-translate-y-5 transition ease-in-out duration-500", src="images/Screenshot-2024-02-15-at-16-39-36.png", alt="")
+                                        h3(class="mb-4 text-xl text-transparent bg-clip-text bg-gradient-purple2 font-heading") Effortless Sharing
+                                        p(class="text-base text-gray-600") Bridge the gap between digital workspaces and traditional documentation. Convert your dynamic Loop pages into easy-to-distribute PDFs with just one click.
+                div(class="ml-auto overflow-hidden lg:absolute lg:top-64 lg:right-0 lg:w-1/2 max-w-max bg-gradient-purple2 rounded-tl-3xl rounded-bl-3xl")
+                    img(class="relative transition duration-500 ease-in-out transform left-16 top-16 hover:-translate-x-5 hover:-translate-y-5", src="images/Screenshot-2024-02-15-at-16-39-36.png", alt="")
             section(class="py-24 overflow-hidden")
-                div(class="container mx-auto px-4")
+                div(class="container px-4 mx-auto")
                     div(class="flex flex-wrap items-center -m-6")
-                        div(class="w-full md:w-1/2 p-6")
+                        div(class="w-full p-6 md:w-1/2")
                             div(class="md:max-w-md")
-                                h2(class="mb-6 font-heading font-bold text-4xl sm:text-5xl text-gray-900") Grow your business connecting with customers
-                                p(class="mb-9 text-base text-gray-900") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit justo, sit iaculis ultrices vitae pulvinar tellus. Volutpat, ut lacus tristique blandit ligula.
-                                div(class="flex flex-wrap -m-2")
-                                    div(class="w-full md:w-auto p-2")
-                                        button(class="px-9 py-3.5 font-heading font-bold w-full lg:w-auto text-base text-white bg-blue-600 hover:bg-blue-700 rounded-md") Book A Call
-                                    div(class="w-full md:w-auto p-2")
-                                        button(class="px-9 py-3.5 font-heading font-bold w-full lg:w-auto text-base text-gray-900 bg-white hover:bg-gray-50 border border-gray-300 rounded-md") Learn More
-                        div(class="w-full md:w-1/2 p-6")
+                                h2(class="mb-6 text-4xl font-bold text-gray-900 font-heading sm:text-5xl") Next up:
+                                ol(class="text-base text-gray-900 list-decimal list-inside mb-9")
+                                    li Microsoft Edge plugin release
+                                    li Demo video
+                                    li Get out of BETA
+                                    li Print out 1-level deep pages automatically
+                        div(class="w-full p-6 md:w-1/2")
                             div(class="flex flex-wrap mx-auto divide-y md:max-w-md")
                                 div(class="w-full py-5")
                                     div(class="flex flex-wrap items-center -m-2.5")
                                         div(class="w-auto p-2.5 self-start")
                                             img(class="relative top-1", src="gradia-assets/elements/cta/file.svg", alt="")
                                         div(class="flex-1 p-2.5")
-                                            a(class="group", href="#")
-                                                h3(class="mb-1 font-heading font-bold text-lg text-gray-900 group-hover:underline") Documentation
-                                                p(class="text-sm text-gray-900") Lorem ipsum dolor sit amet, consectetur elit.
+                                            a(class="group", href="https://github.com/IceBear-Creative-Igloo/LoopPrinter/issues")
+                                                h3(class="mb-1 text-lg font-bold text-gray-900 font-heading group-hover:underline") Found bug?
+                                                p(class="text-sm text-gray-900") File your bug as issue on GitHub
                                         div(class="w-auto p-2.5")
                                             a(href="#")
                                                 svg(class="relative top-1", width="18", height="18", viewbox="0 0 18 18", fill="none", xmlns="http://www.w3.org/2000/svg")
@@ -82,17 +81,17 @@ html(lang="en")
                                         div(class="w-auto p-2.5 self-start")
                                             img(class="relative top-1", src="gradia-assets/elements/cta/file.svg", alt="")
                                         div(class="flex-1 p-2.5")
-                                            a(class="group", href="#")
-                                                h3(class="mb-1 font-heading font-bold text-lg text-gray-900 group-hover:underline") Getting Started with API
-                                                p(class="text-sm text-gray-900") Lorem ipsum dolor sit amet, consectetur elit.
+                                            a(class="group", href="https://github.com/IceBear-Creative-Igloo/LoopPrinter/wiki")
+                                                h3(class="mb-1 text-lg font-bold text-gray-900 font-heading group-hover:underline") Getting Started with Loop Printer
+                                                p(class="text-sm text-gray-900") Check our wiki on GitHub
                                         div(class="w-auto p-2.5")
                                             a(href="#")
                                                 svg(class="relative top-1", width="18", height="18", viewbox="0 0 18 18", fill="none", xmlns="http://www.w3.org/2000/svg")
                                                     path(d="M6.75 3.75L12 9L6.75 14.25", stroke="#18181B", stroke-width="1.5", stroke-linecap="round", stroke-linejoin="round")
             section(class="pt-24 overflow-hidden")
-                div(class="container mx-auto px-4")
-                    h3(class="text-center mb-4") Brought to you by
+                div(class="container px-4 mx-auto")
+                    h3(class="mb-4 text-center") Brought to you by
                     a(href="https://icebear.sk")
                         img(class="mx-auto mb-16 w-36", src="images/LogoText.png", alt="IceBear - Creative Igloo logo")
                     div(class="border-b border-gray-100")
-                    p(class="text-gray-600 text-center py-8 text-sm") © Copyright 2024. All Rights Reserved by IceBear.
+                    p(class="py-8 text-sm text-center text-gray-600") © Copyright 2024. All Rights Reserved by IceBear.
