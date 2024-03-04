@@ -1,5 +1,20 @@
 // Burger menus
 document.addEventListener('DOMContentLoaded', function() {
+    // PostHog
+    const posthogEvents = document.querySelectorAll('[data-posthog]');
+    if (posthogEvents.length) {
+        const posthogEventsLength = posthogEvents.length;
+        console.log('PostHog events', posthogEvents);
+        for (let i = 0; i < posthogEventsLength; i++) {
+            posthogEvents[i].addEventListener('click', (e) => {
+                // e.preventDefault();
+                const data = posthogEvents[i].data;
+                console.log(posthogEvents[i], data);
+                posthog.capture('button click', { property: data });
+            });
+        }
+    }
+
     // open
     const burger = document.querySelectorAll('.navbar-burger');
     const menu = document.querySelectorAll('.navbar-menu');
